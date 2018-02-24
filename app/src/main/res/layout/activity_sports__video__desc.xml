@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.sports.Sports_Video_Desc">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="232dp"
+            android:layout_height="38dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_marginLeft="45dp"
+            />
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            app:srcCompat="@drawable/menu_icon" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Sports Video"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <fragment
+
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:id="@+id/youtube_player"
+        android:layout_marginTop="5.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <TextView
+                android:id="@+id/textView_desc_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="Sports News"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/textView_desc_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:textAlignment="gravity"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="Date" />
+
+
+           <!-- <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/download"
+                android:layout_width="140dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/dw"/>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

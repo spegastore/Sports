@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.sports">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sports_logo"
+        android:label="SPORTS"
+        android:roundIcon="@drawable/sports_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sports_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sports_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_Menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Customestyle"/>
+        <activity
+            android:name=".Sports_Menu_News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_Menu_Video"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Customestyle"/>
+        <activity
+            android:name=".Sports_Menu_Videodata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_News_Desc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_Video"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_Video_Desc"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Sports_Videodownload" />
+    </application>
+
+</manifest>
